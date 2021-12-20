@@ -144,14 +144,14 @@ h2 {
     padding-top: 130px;
 }
 
-.catalog__inner {}
+
 
 .catalog__items {
     display: flex;
     justify-content: space-between;
 }
 
-.catalog__items-wrapper {}
+
 
 .catalog__item {
     width: 630px;
@@ -191,7 +191,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-.catalog__item-text {}
 
 .rhoncus {
     width: 100%;
@@ -246,13 +245,83 @@ h2 {
     cursor: pointer;
 }
 
+
+/* Член */
+.advertising {
+    padding-top: 230px;
+}
+.add__img img{
+    filter: drop-shadow(-101px -101px 0px #F6F6F6);
+}
+.block__add{
+    display: flex;
+    justify-content: space-between;
+}
+.add__rectangle {
+    background-color: #F6F6F6;
+    width: 650px;
+    height: 270px;
+    max-height: 270px;
+    max-width: 650px;
+}
+.add__inner h2 {
+     margin-bottom: 20px !important; 
+}
+.add__inner {
+    padding: 56px 0 0 56px;
+}
+.add__text {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #443C3A;
+    padding-right: 50px;
+}
+.add__stats{
+    margin-left: 30px;
+    display: flex;
+    margin-top: 70px;
+}
+.add__link {
+    margin-top: 70px;
+    margin-left: 30px;
+}
+.add__stats__item {
+    width: 146px;
+    margin-left: 70px;
+}
+.add__stats__item:first-child {
+    margin-left: 0;
+}
+.stats__chislo {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 137.4%;
+    /* or 49px */
+
+    letter-spacing: 0.05em;
+
+    color: #443C3A;
+}
+.stats__text {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+/* /Член */
 /* POPULAR */
 
 .popular__set {
     position: relative;
     padding-top: 130px;
 }
-
 .popular__background {
     z-index: -1;
     bottom: 0;
@@ -261,18 +330,15 @@ h2 {
     height: 580px;
     background-color: #F6F6F6;
 }
-
 .popular__content {
     text-align: center;
 }
-
 .popular__items {
     display: inline-grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 40px;
     padding-bottom: 50px;
 }
-
 .product-name {
     margin: 0 auto;
     max-width: 230px;
@@ -286,7 +352,6 @@ h2 {
 
     color: #443C3A;
 }
-
 .product-price {
     padding-top: 10px;
     font-family: 'Montserrat';
@@ -297,15 +362,13 @@ h2 {
 
     color: #443C3A;
 }
-
-.popular__link {
+.popular__link { 
     padding-bottom: 130px;
 }
-
 .popular__link button {
     text-transform: lowercase;
     background: none;
-    border: none;
+    border:none;
     border-bottom: 1px solid black;
     font-family: 'Montserrat Alternates';
     font-style: normal;
@@ -315,13 +378,37 @@ h2 {
     padding: 15px 35px;
     cursor: pointer;
 }
-
+.popular__img {
+    position: relative;
+    display: block;
+}
+.popular__img:hover .item__link{
+    display: block;
+}
+.item__link {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.item__link button {
+    background: none;
+    border:none;
+    cursor: pointer;
+}
+.item__link img:last-child{
+    margin-left: 15px;
+}
+.popular__item {
+    position: relative;
+}
 /* /POPULAR */
 
-
-/* adventages */
 .block__adventages {
-    padding: 130px 0 0 0;
+    padding: 130px 0 50px 0;
 }
 
 .block__adventages h2 {
@@ -469,7 +556,6 @@ h2 {
     text-decoration-line: underline;
     color: #443C3A;
 }
-
 @media (max-width: 1000px) {
     .rhoncus {
         width: 100%;
