@@ -5,11 +5,11 @@ $(function () {
 		// arrows: false,
 		draggable: true,
 		autoplay: true,
-		autoplaySpeed: 1000,
+		autoplaySpeed: 3000,
 		arrows: false,
 		dots: false,
 		fade: true,
-		speed: 2500,
+		speed: 2000,
 		infinite: true,
 		cssEase: 'ease-in-out',
 		touchThreshold: 100
