@@ -160,8 +160,6 @@ h2 {
     padding-top: 130px;
 }
 
-
-
 .catalog__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -264,7 +262,7 @@ h2 {
 }
 
 
-/* Член */
+/* advertising */
 .advertising {
     padding-top: 230px;
 }
@@ -330,10 +328,7 @@ h2 {
     font-weight: 600;
     font-size: 36px;
     line-height: 137.4%;
-    /* or 49px */
-
     letter-spacing: 0.05em;
-
     color: #443C3A;
 }
 
@@ -345,7 +340,8 @@ h2 {
     line-height: 17px;
 }
 
-/* /Член */
+/* /advertising */
+
 /* POPULAR */
 
 .popular__set {
@@ -531,6 +527,16 @@ h2 {
     display: block;
 }
 
+.footer__item-title::after {
+    content: '';
+    display: none;
+    width: 100%;
+    height: 1px;
+    background: #BEBEBE;
+    transition: width .3s;
+    margin-top: 10px;
+}
+
 .footer__item:nth-child(3) {
     max-width: 300px;
 }
@@ -623,6 +629,7 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
+
 .item__slider {
     background-color: #F6F6F6;
     width: 100%;
@@ -630,21 +637,25 @@ h2 {
     min-height: 616px;
     min-width: 730px;
 }
+
 .item__description {
     margin-left: 40px;
 }
-.item__name *{
+
+.item__name * {
     margin-bottom: 20px !important;
 }
+
 .item__text {
     font-family: 'Montserrat Alternates';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-    
+
     color: #443C3A;
 }
+
 .item__price {
     margin-top: 50px;
     font-family: 'Montserrat Alternates';
@@ -653,11 +664,13 @@ h2 {
     font-size: 24px;
     line-height: 29px;
 }
+
 .item__color {
     margin-top: 25px;
     display: flex;
 }
-.item__color *{
+
+.item__color * {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -666,34 +679,42 @@ h2 {
     border-radius: 50%;
     margin-left: 15px;
 }
+
 .item__color *:first-child {
     margin-left: 0px;
 }
+
 .item__color button:nth-child(1) {
     background-color: #C4C4C4;
 }
+
 .item__color button:nth-child(2) {
     background-color: #CAB5B0;
 }
+
 .item__color button:nth-child(3) {
     background-color: #C5BE80;
 }
+
 .item__color button:nth-child(4) {
     background-color: #7F8AB2;
 }
+
 .item__color button:nth-child(5) {
     background-color: #F1F1F1;
 }
 
-.item__color button:focus{
+.item__color button:focus {
     border: 3px solid #443C3A;
 }
+
 .item__to__cart {
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
 }
-.item__to__cart *{
+
+.item__to__cart * {
     background: none;
     border: none;
     outline: none;
@@ -704,17 +725,20 @@ h2 {
     line-height: 20px;
     cursor: pointer;
 }
+
 .btn__cart {
     border: 1px solid #443C3A;
     max-width: 400px;
     height: 50px;
     width: 100%;
 }
+
 .item__delivery {
     margin-top: 30px;
     display: flex;
     align-items: center;
 }
+
 .item__delivery *:last-child {
     margin-left: 20px;
 }
@@ -739,13 +763,27 @@ h2 {
     .add__rectangle {
         height: 50%;
     }
+
+    .footer__item:nth-child(4) {
+        max-width: 295px;
+    }
 }
 
 @media screen and (max-width: 1060px) {
-
-
     .add__inner {
         padding: 25px 0 0 25px;
+    }
+
+    .footer__item:nth-child(4) {
+        max-width: 255px;
+    }
+
+    .footer__item:nth-child(3) {
+        max-width: 250px;
+    }
+
+    .footer__input {
+        width: 200px;
     }
 }
 
@@ -823,6 +861,39 @@ h2 {
 
     .catalog {
         padding-top: 50px;
+    }
+
+    .footer__item:nth-child(4) {
+        max-width: 235px;
+    }
+
+    .footer__item:nth-child(3) {
+        max-width: 220px;
+    }
+
+    .footer__input {
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer__item-content {
+        display: none;
+    }
+
+    .footer__item-title::after {
+        display: block;
+    }
+    .footer__item-title{
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
+    .footer__items {
+        display: block;
+    }
+    .footer__item:nth-child(3),
+    .footer__item:nth-child(4) {
+        max-width: 100%;
     }
 }
 
