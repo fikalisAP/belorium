@@ -35,6 +35,5 @@ $(function () {
 		else {
 			$('.another__tittle__img').attr("src", "../images/upArrow.svg");
 		}
-
     });
 });
