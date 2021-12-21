@@ -16,29 +16,6 @@ $(function () {
 	});
 })
 
-$('.item__color *').click(function(){
-    if($(this).hasClass('active')){
-        $(this).removeClass('active')
-		$(this).css('border', 'none')
-    } else {
-        $(this).addClass('active')
-		$(this).css('border', '3px solid #443C3A')
-    }
-});
-
-$(function () {
-    $('.another__tittle__wrapper').click(function (event) {
-        $(this).toggleClass('active').children().next().slideToggle(300);
-		if ($(this).hasClass('active')) {
-			$('.another__tittle__wrapper.active').children().children('img').attr("src", "../images/downArrow.svg");
-		}
-		else {
-			$('.another__tittle__img').attr("src", "../images/upArrow.svg");
-		}
-
-    });
-});
-
 $(function () {
 	var $window = $(window);
 	$('.footer__item-title').click(function (event) {
