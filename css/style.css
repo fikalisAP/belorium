@@ -731,17 +731,11 @@ color: #443C3A;
     background-color: #F1F1F1;
 }
 
-<<<<<<< HEAD
-=======
-.item__color button:focus {
-    border: 3px solid #443C3A;
-}
->>>>>>> 0dbdd227b5dea82ca281e1142d4b6cb4ed2440c2
-
 .item__to__cart {
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .item__to__cart * {
