@@ -545,6 +545,7 @@ h2 {
     max-width: 20px;
     transform: rotate(270deg);
 }
+
 .footer__item-title__active::before {
     content: url('../images/arrow.svg');
     display: block;
@@ -552,6 +553,7 @@ h2 {
     right: 36px;
     transform: rotate(90deg);
 }
+
 .footer__item:nth-child(3) {
     max-width: 300px;
 }
@@ -853,12 +855,53 @@ h2 {
         height: 85vh;
     }
 
+    .header__logo {
+        margin-right: 0px;
+    }
+
     .active {
         display: block;
     }
 
     .menu {
         display: none;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        z-index: -1;
+        height: 100vh;
+    }
+
+    .menu-list {
+        display: block;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .menu-item+.menu-item {
+        margin-left: 0px;
+        border-bottom: 1px solid #989898;
+        padding: 20px 0;
+    }
+
+    .menu-item {
+        border-bottom: 1px solid #989898;
+        padding: 20px 0;
+    }
+
+    .menu__icon-list {
+        display: block;
+        text-align: center;
+    }
+
+    .menu__icon-item {
+        margin-left: 0px;
+        border-bottom: 1px solid #989898;
+        padding: 10px 0;
     }
 
     .slider-item {
@@ -905,9 +948,11 @@ h2 {
     .footer__item-title::after {
         display: block;
     }
+
     .footer__item-title::before {
         display: block;
     }
+
     .footer__item-title {
         margin-bottom: 50px;
         cursor: pointer;

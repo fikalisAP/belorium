@@ -25,4 +25,7 @@ $(function () {
 			$(this).toggleClass('footer__item-title__active');
 		}
 	});
+	$('.menu__burger').on('click', function(){
+        $('.menu').slideToggle();
+    })
 });
