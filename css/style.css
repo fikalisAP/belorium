@@ -168,8 +168,6 @@ color: #443C3A;
     padding-top: 130px;
 }
 
-
-
 .catalog__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -272,7 +270,7 @@ color: #443C3A;
 }
 
 
-/* Член */
+/* advertising */
 .advertising {
     padding-top: 230px;
 }
@@ -338,10 +336,7 @@ color: #443C3A;
     font-weight: 600;
     font-size: 36px;
     line-height: 137.4%;
-    /* or 49px */
-
     letter-spacing: 0.05em;
-
     color: #443C3A;
 }
 
@@ -353,7 +348,8 @@ color: #443C3A;
     line-height: 17px;
 }
 
-/* /Член */
+/* /advertising */
+
 /* POPULAR */
 
 .popular__set {
@@ -539,6 +535,33 @@ color: #443C3A;
     display: block;
 }
 
+.footer__item-title::after {
+    content: '';
+    display: none;
+    width: 100%;
+    height: 1px;
+    background: #BEBEBE;
+    transition: width .3s;
+    margin-top: 10px;
+}
+
+.footer__item-title::before {
+    content: url('../images/arrow.svg');
+    display: none;
+    position: absolute;
+    right: 30px;
+    max-width: 20px;
+    transform: rotate(270deg);
+}
+
+.footer__item-title__active::before {
+    content: url('../images/arrow.svg');
+    display: block;
+    position: absolute;
+    right: 36px;
+    transform: rotate(90deg);
+}
+
 .footer__item:nth-child(3) {
     max-width: 300px;
 }
@@ -598,6 +621,8 @@ color: #443C3A;
     outline: none;
     border: none;
     transform: translateX(-30px);
+    padding: 10px;
+    cursor: pointer;
 }
 
 .footer__link {
@@ -631,6 +656,7 @@ color: #443C3A;
     display: flex;
     justify-content: space-between;
 }
+
 .item__slider {
     background-color: #F6F6F6;
     width: 100%;
@@ -638,21 +664,25 @@ color: #443C3A;
     min-height: 616px;
     min-width: 730px;
 }
+
 .item__description {
     margin-left: 40px;
 }
-.item__name *{
+
+.item__name * {
     margin-bottom: 20px !important;
 }
+
 .item__text {
     font-family: 'Montserrat Alternates';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-    
+
     color: #443C3A;
 }
+
 .item__price {
     margin-top: 50px;
     font-family: 'Montserrat Alternates';
@@ -661,11 +691,13 @@ color: #443C3A;
     font-size: 24px;
     line-height: 29px;
 }
+
 .item__color {
     margin-top: 25px;
     display: flex;
 }
-.item__color *{
+
+.item__color * {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -674,32 +706,45 @@ color: #443C3A;
     border-radius: 50%;
     margin-left: 15px;
 }
+
 .item__color *:first-child {
     margin-left: 0px;
 }
+
 .item__color button:nth-child(1) {
     background-color: #C4C4C4;
 }
+
 .item__color button:nth-child(2) {
     background-color: #CAB5B0;
 }
+
 .item__color button:nth-child(3) {
     background-color: #C5BE80;
 }
+
 .item__color button:nth-child(4) {
     background-color: #7F8AB2;
 }
+
 .item__color button:nth-child(5) {
     background-color: #F1F1F1;
 }
 
+<<<<<<< HEAD
+=======
+.item__color button:focus {
+    border: 3px solid #443C3A;
+}
+>>>>>>> 0dbdd227b5dea82ca281e1142d4b6cb4ed2440c2
 
 .item__to__cart {
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
 }
-.item__to__cart *{
+
+.item__to__cart * {
     background: none;
     border: none;
     outline: none;
@@ -717,11 +762,13 @@ color: #443C3A;
     height: 50px;
     width: 100%;
 }
+
 .item__delivery {
     margin-top: 20px;
     display: flex;
     align-items: center;
 }
+
 .item__delivery *:last-child {
     margin-left: 20px;
 }
@@ -774,13 +821,27 @@ color: #443C3A;
     .add__rectangle {
         height: 50%;
     }
+
+    .footer__item:nth-child(4) {
+        max-width: 295px;
+    }
 }
 
 @media screen and (max-width: 1060px) {
-
-
     .add__inner {
         padding: 25px 0 0 25px;
+    }
+
+    .footer__item:nth-child(4) {
+        max-width: 255px;
+    }
+
+    .footer__item:nth-child(3) {
+        max-width: 250px;
+    }
+
+    .footer__input {
+        width: 200px;
     }
 }
 
@@ -833,12 +894,53 @@ color: #443C3A;
         height: 85vh;
     }
 
+    .header__logo {
+        margin-right: 0px;
+    }
+
     .active {
         display: block;
     }
 
     .menu {
         display: none;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        z-index: -1;
+        height: 100vh;
+    }
+
+    .menu-list {
+        display: block;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .menu-item+.menu-item {
+        margin-left: 0px;
+        border-bottom: 1px solid #989898;
+        padding: 20px 0;
+    }
+
+    .menu-item {
+        border-bottom: 1px solid #989898;
+        padding: 20px 0;
+    }
+
+    .menu__icon-list {
+        display: block;
+        text-align: center;
+    }
+
+    .menu__icon-item {
+        margin-left: 0px;
+        border-bottom: 1px solid #989898;
+        padding: 10px 0;
     }
 
     .slider-item {
@@ -858,6 +960,67 @@ color: #443C3A;
 
     .catalog {
         padding-top: 50px;
+    }
+
+    .footer__item:nth-child(4) {
+        max-width: 235px;
+    }
+
+    .footer__item:nth-child(3) {
+        max-width: 220px;
+    }
+
+    .footer__input {
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer__item-content {
+        display: none;
+    }
+
+    .footer__item-content__active {
+        display: block;
+    }
+
+    .footer__item-title::after {
+        display: block;
+    }
+
+    .footer__item-title::before {
+        display: block;
+    }
+
+    .footer__item-title {
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
+
+    .footer__items {
+        display: block;
+    }
+
+    .footer__item:nth-child(3),
+    .footer__item:nth-child(4) {
+        max-width: 100%;
+    }
+
+    .footer-content__link {
+        padding: 10px;
+    }
+
+    .footer__link {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer__copy {
+        margin-bottom: 25px;
+    }
+
+    .footer__input {
+        width: 300px;
     }
 }
 
@@ -964,4 +1127,7 @@ color: #443C3A;
         margin: 25px 0 0 15px;
     }
 
+    .footer__input {
+        width: 200px;
+    }
 }
