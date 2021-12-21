@@ -22,7 +22,15 @@ h2 {
     color: #443C3A;
     margin-bottom: 50px;
 }
-
+h3 {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+color: #443C3A;
+}
 .container {
     width: 100%;
     max-width: 1300px;
@@ -685,9 +693,7 @@ h2 {
     background-color: #F1F1F1;
 }
 
-.item__color button:focus{
-    border: 3px solid #443C3A;
-}
+
 .item__to__cart {
     display: flex;
     margin-top: 50px;
@@ -704,6 +710,7 @@ h2 {
     line-height: 20px;
     cursor: pointer;
 }
+
 .btn__cart {
     border: 1px solid #443C3A;
     max-width: 400px;
@@ -711,14 +718,42 @@ h2 {
     width: 100%;
 }
 .item__delivery {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
 }
 .item__delivery *:last-child {
     margin-left: 20px;
 }
+.plus__good {
+    max-width: 730px;
+    margin-top: 100px;
+}
+.another__tittle__desc {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.another__tittle__wrapper {
+    margin-top: 35px;
+}
 
+.another__tittle__wrapper h3 {
+    padding: 10px 0 10px 0;
+}
+.another__text {
+    display: none;
+    margin-top: 20px;
+}
+
+.another__text * {
+    margin-bottom: 15px;
+}
+.another__text *:last-child{
+    margin-bottom: 0;
+}
 /* /СТРАНИЦА ТОВАРА */
 
 /* 1110 */
