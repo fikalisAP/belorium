@@ -72,11 +72,27 @@ h2 {
     margin-left: 30px;
 }
 
+.menu__burger {
+    position: absolute;
+    right: 30px;
+}
+
+.burger__btn {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.burger__img {
+    display: none;
+}
+
 .header__content {
     max-width: 585px;
     position: absolute;
     top: 60%;
     transform: translateY(-50%);
+    z-index: 10;
 }
 
 .pre-title {
@@ -161,7 +177,7 @@ h2 {
     background-repeat: no-repeat;
     display: block;
     padding: 40px 30px;
-    margin-bottom: 20px;
+    margin: 0 20px 20px 0;
 }
 
 .catalog__item:nth-child(2) {
@@ -250,15 +266,18 @@ h2 {
 .advertising {
     padding-top: 230px;
 }
-.add__img img{
+
+.add__img img {
     max-width: 508px;
     width: 100%;
     filter: drop-shadow(-101px -101px 0px #F6F6F6);
 }
-.block__add{
+
+.block__add {
     display: flex;
     justify-content: space-between;
 }
+
 .add__rectangle {
     background-color: #F6F6F6;
     width: 100%;
@@ -267,12 +286,15 @@ h2 {
     max-height: 270px;
     max-width: 650px;
 }
+
 .add__inner h2 {
-     margin-bottom: 20px !important; 
+    margin-bottom: 20px !important;
 }
+
 .add__inner {
     padding: 56px 0 0 56px;
 }
+
 .add__text {
     font-family: 'Montserrat Alternates';
     font-style: normal;
@@ -282,22 +304,27 @@ h2 {
     color: #443C3A;
     padding-right: 50px;
 }
-.add__stats{
+
+.add__stats {
     margin-left: 30px;
     display: flex;
     margin-top: 70px;
 }
+
 .add__link {
     margin-top: 70px;
     margin-left: 30px;
 }
+
 .add__stats__item {
     width: 146px;
     margin-left: 70px;
 }
+
 .add__stats__item:first-child {
     margin-left: 0;
 }
+
 .stats__chislo {
     font-family: 'Montserrat Alternates';
     font-style: normal;
@@ -310,6 +337,7 @@ h2 {
 
     color: #443C3A;
 }
+
 .stats__text {
     font-family: 'Montserrat Alternates';
     font-style: normal;
@@ -325,6 +353,7 @@ h2 {
     position: relative;
     margin-top: 130px;
 }
+
 .popular__background {
     z-index: -1;
     bottom: 0;
@@ -334,6 +363,7 @@ h2 {
 
     background-color: #F6F6F6;
 }
+
 .popular__content {
     text-align: center;
 }
@@ -344,6 +374,7 @@ h2 {
     column-gap: 40px;
     padding-bottom: 50px;
 }
+
 .product-name {
     margin: 0 auto;
     max-width: 230px;
@@ -357,6 +388,7 @@ h2 {
 
     color: #443C3A;
 }
+
 .product-price {
     padding-top: 10px;
     font-family: 'Montserrat';
@@ -367,13 +399,15 @@ h2 {
 
     color: #443C3A;
 }
-.popular__link { 
+
+.popular__link {
     padding-bottom: 130px;
 }
+
 .popular__link button {
     text-transform: lowercase;
     background: none;
-    border:none;
+    border: none;
     border-bottom: 1px solid black;
     font-family: 'Montserrat Alternates';
     font-style: normal;
@@ -383,19 +417,23 @@ h2 {
     padding: 15px 35px;
     cursor: pointer;
 }
+
 .popular__img {
     position: relative;
     display: block;
 }
-.popular__img img{
+
+.popular__img img {
     object-fit: cover;
     max-width: 100%;
     width: 100%;
     height: 100%;
 }
-.popular__img:hover .item__link{
+
+.popular__img:hover .item__link {
     display: block;
 }
+
 .item__link {
     display: none;
     z-index: 10;
@@ -403,19 +441,23 @@ h2 {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    
+
 }
+
 .item__link button {
     background: none;
-    border:none;
+    border: none;
     cursor: pointer;
 }
-.item__link img:last-child{
+
+.item__link img:last-child {
     margin-left: 15px;
 }
+
 .popular__item {
     position: relative;
 }
+
 /* /POPULAR */
 
 .block__adventages {
@@ -572,31 +614,40 @@ h2 {
     text-decoration-line: underline;
     color: #443C3A;
 }
+
 /* add block */
 
 
 /* 1110 */
 
 @media screen and (max-width: 1110px) {
-    
+
     .add__stats {
         margin-top: 20px;
     }
-   
+
+    .header__logo {
+        margin-right: 50px;
+    }
+
 }
+
 @media screen and (max-width: 1180px) {
     .add__rectangle {
         height: 50%;
     }
 }
+
 @media screen and (max-width: 1060px) {
     .add__link {
         margin-top: 30px;
     }
+
     .add__inner {
         padding: 25px 0 0 25px;
     }
 }
+
 @media screen and (max-width: 1050px) {
     .block__add {
         flex-direction: column;
@@ -604,25 +655,128 @@ h2 {
         justify-content: center;
         margin: 0 auto;
     }
+
     .add__rectangle {
         margin-top: 20px;
         height: 100%;
         width: 100%;
         max-width: 100%;
     }
+
     .add__stats {
         margin-top: 50px;
         justify-content: center;
     }
+
     .add__link {
         margin-top: 60px;
         text-align: center;
     }
+
     .add__inner {
         text-align: center;
         padding: 80px 0 80px 0;
     }
+
     .add__inner h2 {
         margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header__navigation {
+        justify-content: center;
+    }
+
+    .header__inner {
+        height: 85vh;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .slider-item {
+        background-position: top right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 85vh;
+    }
+
+    .header__content {
+        position: unset;
+        top: 0;
+        transform: translateY(0);
+        margin: 25px 0 0 34px;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 95%;
+    }
+
+    .description {
+        line-height: 20px;
+    }
+
+    .catalog__items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .catalog__item {
+        width: 335px;
+        height: 212px;
+        padding: 40px 30px;
+        margin: 0 0 20px;
+    }
+
+    .catalog__item:nth-child(2) {
+        width: 335px;
+        height: 212px;
+    }
+
+    .catalog__item1:nth-child(1) {
+        width: 335px;
+        height: 212px;
+    }
+
+    .catalog__item1 {
+        width: 335px;
+        height: 212px;
+        padding: 23px 16px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo {
+        width: 179px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logo {
+        width: 159px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header__navigation {
+        justify-content: space-between;
+    }
+
+    .header__content {
+        margin: 25px 0 0 15px;
     }
 }
