@@ -751,6 +751,7 @@ color: #443C3A;
 }
 
 .btn__cart {
+    margin-right: 20px;
     border: 1px solid #443C3A;
     max-width: 400px;
     height: 50px;
@@ -897,8 +898,9 @@ color: #443C3A;
     }
 
     .menu {
+        padding: -10px 0 -10px 0;
         display: none;
-        position: absolute;
+        position: absolute !important;
         top: 0px;
         left: 0;
         right: 0;

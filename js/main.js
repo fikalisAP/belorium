@@ -49,5 +49,6 @@ $(function () {
 	});
 	$('.menu__burger').on('click', function(){
         $('.menu').slideToggle();
+		$('.container').css('padding', '0px')
     })
 });
