@@ -15,3 +15,14 @@ $(function () {
 		touchThreshold: 100
 	});
 })
+
+$(function () {
+	var $window = $(window);
+	$('.footer__item-title').click(function (event) {
+		var windowsize = $window.width();
+		if (windowsize < 900) {
+			$(this).toggleClass('active').next().slideToggle(300);
+			$(this).toggleClass('footer__item-title__active');
+		}
+	});
+});
