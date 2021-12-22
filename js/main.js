@@ -75,3 +75,7 @@ $(function () {
 $('.catalog__item').click(function () {
 	window.location.href = 'pages/good.html';
 });
+
+$('.popular__item').click(function () {
+	window.location.href = 'pages/good.html';
+});
