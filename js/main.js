@@ -52,3 +52,6 @@ $(function () {
 		$('.container').css('padding', '0px')
     })
 });
+$('.catalog__item').click(function(){
+	window.location.href = '../pages/good.html';
+});

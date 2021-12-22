@@ -22,6 +22,7 @@ h2 {
     color: #443C3A;
     margin-bottom: 50px;
 }
+
 h3 {
     font-family: 'Montserrat Alternates';
     font-style: normal;
@@ -29,8 +30,9 @@ h3 {
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
-color: #443C3A;
+    color: #443C3A;
 }
+
 .container {
     width: 100%;
     max-width: 1300px;
@@ -186,6 +188,7 @@ color: #443C3A;
     background-repeat: no-repeat;
     display: block;
     padding: 40px 30px;
+    cursor: pointer;
 }
 
 .catalog__item-text::after {
@@ -252,11 +255,10 @@ color: #443C3A;
     margin: 20px auto 50px;
 }
 
-.rhoncus__content button {
+.rhoncus__content a {
     border: 1px solid black;
     font-family: 'Montserrat Alternates';
-    width: 278px;
-    height: 60px;
+    padding: 19px 85px;
     background: transparent;
     font-style: normal;
     font-weight: 500;
@@ -407,7 +409,7 @@ color: #443C3A;
     padding-bottom: 130px;
 }
 
-.popular__link button {
+.popular__link a {
     text-transform: lowercase;
     background: none;
     border: none;
@@ -767,10 +769,12 @@ color: #443C3A;
 .item__delivery *:last-child {
     margin-left: 20px;
 }
+
 .plus__good {
     max-width: 730px;
     margin-top: 100px;
 }
+
 .another__tittle__desc {
     cursor: pointer;
     border-bottom: 1px solid black;
@@ -778,6 +782,7 @@ color: #443C3A;
     justify-content: space-between;
     align-items: center;
 }
+
 .another__tittle__wrapper {
     margin-top: 35px;
 }
@@ -785,6 +790,7 @@ color: #443C3A;
 .another__tittle__wrapper h3 {
     padding: 10px 0 10px 0;
 }
+
 .another__text {
     display: none;
     margin-top: 20px;
@@ -793,9 +799,11 @@ color: #443C3A;
 .another__text * {
     margin-bottom: 15px;
 }
-.another__text *:last-child{
+
+.another__text *:last-child {
     margin-bottom: 0;
 }
+
 /* /СТРАНИЦА ТОВАРА */
 
 /* 1110 */
@@ -1105,6 +1113,15 @@ color: #443C3A;
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
+    }
+
+    .catalog__item-text::after {
+        max-width: 84px;
+    }
+
+    .catalog__item:hover .catalog__item-text::after {
+        max-width: 84px;
+        width: 100%;
     }
 }
 
