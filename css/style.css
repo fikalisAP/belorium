@@ -544,6 +544,7 @@ h3 {
     background: url('../images/dots.svg');
     cursor: pointer;
 }
+
 .adventage-inner .slick-dots .slick-active {
     border: none;
     outline: none;
@@ -712,6 +713,18 @@ h3 {
 
 .item__description {
     margin-left: 40px;
+    position: relative;
+    max-width: 510px;
+    width: 100%;
+    right: 0;
+}
+.item__description-inner{
+
+}
+.item__description-fixed {
+    position: fixed;
+    top: 50px;
+    max-width: 510px;
 }
 
 .item__name * {
@@ -1121,10 +1134,12 @@ h3 {
         max-width: 335px;
         display: inline-block;
     }
+
     .popular__img img {
         object-fit: cover;
         max-width: 400px;
     }
+
     .slick-slide img {
         display: inline-block;
     }
