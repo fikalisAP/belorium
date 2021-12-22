@@ -16,6 +16,12 @@ $(function () {
 		cssEase: 'ease-in-out',
 		touchThreshold: 100
 	});
+	if (windowsize <= 850) {
+		$('.popular__items').slick({
+			arrows: false,
+			dots: true,
+		});
+	}
 	if (windowsize <= 900) {
 		$('.adventage-inner').slick({
 			dots: true,
@@ -77,5 +83,5 @@ $('.catalog__item').click(function () {
 });
 
 $('.popular__item').click(function () {
-	window.location.href = 'pages/good.html';
+	// window.location.href = 'pages/good.html';
 });
