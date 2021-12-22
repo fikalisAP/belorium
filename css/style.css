@@ -937,7 +937,7 @@ h3 {
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     .header__navigation {
         justify-content: center;
     }
