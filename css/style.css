@@ -921,6 +921,18 @@ h3 {
     .add__inner h2 {
         margin-bottom: 50px;
     }
+    .advertising {
+        padding-top: 118px;
+    }
+    .add__img img {
+        filter: drop-shadow(-101px -60px 0px #F6F6F6);
+    }
+    .popular__set {
+        margin-top: 50px;
+    }
+    .block__adventages {
+        padding: 50px 0 50px 0;
+    }
 }
 
 
