@@ -2,21 +2,49 @@ $(function () {
 	var $window = $(window);
 	var height = $('header').height();
 	var heightTo = $('.block__item-inner').height();
-	$(window).scroll(function () {
-		// var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-		// console.log(heightTo);
-		// console.log("Текущая прокрутка: " + scrollTop);
-		if ($(this).scrollTop() > height && $(this).scrollTop() < heightTo){
-			$('.item__description-inner').addClass('item__description-fixed')
-		} else {
-			$('.item__description-inner').removeClass('item__description-fixed')
-			$('.item__description-inner').removeClass('item__description-absolute')
-		}
-		if ($(this).scrollTop() > heightTo){
-			$('.item__description-inner').removeClass('item__description-fixed')
-			$('.item__description-inner').addClass('item__description-absolute')
-		}
-	})
+	// $(window).scroll(function () {
+	// 	// var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	// 	// console.log(heightTo);
+	// 	// console.log("Текущая прокрутка: " + scrollTop);
+	// 	if ($(this).scrollTop() > height && $(this).scrollTop() < heightTo){
+	// 		$('.item__description-inner').addClass('item__description-fixed')
+	// 	} else {
+	// 		$('.item__description-inner').removeClass('item__description-fixed')
+	// 		$('.item__description-inner').removeClass('item__description-absolute')
+	// 	}
+	// 	if ($(this).scrollTop() > heightTo){
+	// 		$('.item__description-inner').removeClass('item__description-fixed')
+	// 		$('.item__description-inner').addClass('item__description-absolute')
+	// 	}
+	// })
+
+	// 
+
+
+
+	$('.main-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,               
+		dots: false,
+		arrows:false,
+		infinite: true,
+		asNavFor: '.thumb-slider'
+	  });  
+	  
+	  $('.thumb-slider').slick({
+		arrows: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,               
+		dots: false,
+		infinite: true,
+		asNavFor: '.main-slider',
+		focusOnSelect: true,
+		centerMode: false,
+		vertical: true,
+	  });   
+
+
+	//   
 	var windowsize = $window.width();
 	$('.header__slider-inner').slick({
 		// autoplay: true,

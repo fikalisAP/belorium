@@ -707,6 +707,7 @@ h3 {
     background-color: #F6F6F6;
     min-height: 616px;
     min-width: 730px;
+    max-width: 730px;
 }
 
 .item__description {
@@ -879,6 +880,13 @@ h3 {
 }
 
 @media screen and (max-width: 1180px) {
+    .item__description {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .block__item {
+        display: block;
+    }
     .add__rectangle {
         height: 50%;
     }
@@ -1249,3 +1257,32 @@ h3 {
         width: 200px;
     }
 }
+
+
+/*  */
+
+.chlen {
+    width: 100%;
+    height: 100%;
+}
+.block__item-inner {
+    max-width: 730px;
+    display: grid;
+    grid-template-columns: 140px calc(100% - 140px);
+}
+.thumb-slider img{
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.thumb-slider {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+     margin-right: 16px;
+}
+
+
+
+/*  */
