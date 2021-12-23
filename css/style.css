@@ -717,15 +717,16 @@ h3 {
     width: 100%;
     right: 0;
 }
-.item__description-inner{
 
-}
+.item__description-inner {}
+
 .item__description-fixed {
     position: fixed;
     top: 50px;
     max-width: 510px;
 }
-.item__description-absolute{
+
+.item__description-absolute {
     position: absolute;
     bottom: 0;
 }
@@ -863,6 +864,44 @@ h3 {
     margin-bottom: 0;
 }
 
+/* slider */
+.block__item-inner {
+    max-width: 730px;
+    display: grid;
+    grid-template-columns: 140px calc(100% - 140px);
+}
+
+.thumb-slider img {
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.thumb-slider {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 16px;
+}
+
+.prev,
+.next {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    cursor: pointer;
+}
+.next {
+    right: 10px;
+}
+.prev {
+    left: 10px;
+}
+
+/*  */
+
 /* /СТРАНИЦА ТОВАРА */
 
 /* 1110 */
@@ -884,9 +923,11 @@ h3 {
         margin-top: 40px;
         margin-left: 0px;
     }
+
     .block__item {
         display: block;
     }
+
     .add__rectangle {
         height: 50%;
     }
@@ -1118,6 +1159,32 @@ h3 {
     }
 }
 
+@media screen and (max-width: 750px) {
+    .block__item-inner {
+        grid-template-columns: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    .thumb-slider {
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 16px;
+    }
+
+    .main-slider img {
+        margin: 0 10px;
+    }
+
+    .block__item {
+        margin-top: 50px;
+    }
+}
+
+
 @media screen and (max-width: 850px) {
     .catalog__items {
         display: grid;
@@ -1257,32 +1324,3 @@ h3 {
         width: 200px;
     }
 }
-
-
-/*  */
-
-.chlen {
-    width: 100%;
-    height: 100%;
-}
-.block__item-inner {
-    max-width: 730px;
-    display: grid;
-    grid-template-columns: 140px calc(100% - 140px);
-}
-.thumb-slider img{
-    margin-bottom: 25px;
-    cursor: pointer;
-}
-.thumb-slider {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-     margin-right: 16px;
-}
-
-
-
-/*  */
