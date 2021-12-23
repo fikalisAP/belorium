@@ -3,9 +3,9 @@ $(function () {
 	var height = $('header').height();
 	var heightTo = $('.block__item-inner').height();
 	$(window).scroll(function () {
-		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-		console.log(heightTo);
-		console.log("Текущая прокрутка: " + scrollTop);
+		// var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		// console.log(heightTo);
+		// console.log("Текущая прокрутка: " + scrollTop);
 		if ($(this).scrollTop() > height && $(this).scrollTop() < heightTo){
 			$('.item__description-inner').addClass('item__description-fixed')
 		} else {
@@ -33,21 +33,27 @@ $(function () {
 		cssEase: 'ease-in-out',
 		touchThreshold: 100
 	});
-	window.addEventListener("resize", function() {
-		if (window.innerWidth > 850) {
-		  	$('.popular__items').slick('unslick');
+	if (windowsize) {
+		if (windowsize < 850) {
+			$(".popular__items").not('.slick-initialized').slick({
+				arrows: false,
+				dots: true,
+			});
 		}
-		else if (window.innerWidth < 850){
+	window.addEventListener("resize", function() {
+		
+		if (window.innerWidth > 850) {
+		  	$('.popular__items').filter('.slick-initialized').slick('unslick');
+		}
+		else {
 			$(".popular__items").not('.slick-initialized').slick({
 				arrows: false,
 				dots: true,
 			});
 		}
 	  });
-		$('.popular__items').slick({
-			arrows: false,
-			dots: true,
-		});
+	}
+
 	if (windowsize < 900) {
 		$('.adventage-inner').slick({
 			dots: true,
